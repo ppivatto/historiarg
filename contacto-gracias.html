@@ -87,26 +87,26 @@
 		</div>
 		<div id="mobileMenu">
 			<ul>
-				<li><a href="index">Inicio</a></li>
+				<li><a href="index.html">Inicio</a></li>
 				<li><a href="javascript:void(0)">Sucesos</a></li>
 				<li><a href="javascript:void(0)">Biografías</a></li>
 				<li><a href="javascript:void(0)">Libros Recomendados</a></li>
 				<li><a href="javascript:void(0)">Documentos</a></li>
-				<li><a href="contacto">Contacto</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
 			</ul>
 		</div>
-		<h1 class="titulo"><a href="index">HistoriArg</a></h1>
+		<h1 class="titulo"><a href="index.html">HistoriArg</a></h1>
 		<p class="titulo" class="subtitulo">Nuestra historia esperando por vos</p>
 
 		<nav>
 			<h2 class="hidden">Nuestra navegación</h2>
 			<ul>
-				<li><a href="index">Inicio</a></li>
+				<li><a href="index.html">Inicio</a></li>
 				<li><a href="javascript:void(0)">Sucesos</a></li>
 				<li><a href="javascript:void(0)">Biografías</a></li>
 				<li><a href="javascript:void(0)">Libros Recomendados</a></li>
 				<li><a href="javascript:void(0)">Documentos</a></li>
-				<li><a href="contacto">Contacto</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -121,29 +121,66 @@
 			</form>
 		</div>
 	</section>-->
-	<div id="form-main">
-		<div id="form-div">
-			<form class="form" id="form1" action="contacto.php" method="post">
+	<script type="text/javascript">
+		/*function getUrlVars()
+		{
+			var vars = [], hash;
+			var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+			for(var i = 0; i < hashes.length; i++)
+			{
+				hash = hashes[i].split('=');
+				vars.push(hash[0]);
+				vars[hash[0]] = hash[1];
+			}
 
-				<p class="name">
-					<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nombre" id="name" />
-				</p>
+			var first = getUrlVars()["msg"];
+			alert("variable "+ first);
 
-				<p class="email">
-					<input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
-				</p>
+			//return vars;
+		}
+*/
+		function getUrlVars() {
+			var vars = [], hash;
+			var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+			for(var i = 0; i < hashes.length; i++)
+			{
+				hash = hashes[i].split('=');
+				vars.push(hash[0]);
+				vars[hash[0]] = hash[1];
+			}
+			return vars;
+		}
 
-				<p class="text">
-					<textarea name="comment" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comentario"></textarea>
-				</p>
+		function getValue() {
 
+			var urlPrm = getUrlVars()["msg"];
+			var msg = "";
+			if(urlPrm == "val1") {
+				msg = "Gracias por comunicarse con HistoriArg!!! Su mensaje se envió correctamente....";
+			} else {
+				msg = "Error: Su información no pudo ser enviada, intente más tarde. Disculpe las molestias";
+			}
 
-				<div class="submit">
-					<input type="submit" value="SEND" id="button-blue"/>
-					<div class="ease"></div>
-				</div>
-			</form>
-		</div>
+			return msg;
+		}
+	</script>
+	<div class="contacto-gracias">
+		<p id="p1"></p>
+		<span id="span-ok" class="contacto-gracias-img-happy">
+			<img src="img/happy-face-icon.png" alt="Muchas gracias!!">
+		</span>
+		<span id="span-err" class="contacto-gracias-img-sad">
+			<img src="img/sad-icon.png" alt="Muchas gracias!!">
+		</span>
+		<script>
+			var urlPrm = getUrlVars()["msg"];
+			var stateOk = (urlPrm == "val1") ? true : false;
+
+			document.getElementById("p1").innerHTML = getValue();
+			document.getElementById("p1").className = (stateOk) ? "contacto-gracias-p-ok" : "contacto-gracias-p-err" ;
+			document.getElementById("span-ok").style.visibility = (stateOk) ? 'visible' : 'hidden';
+			document.getElementById("span-err").style.visibility = (stateOk) ? 'hidden' : 'visible';
+		</script>
 	</div>
 
 	<footer>
