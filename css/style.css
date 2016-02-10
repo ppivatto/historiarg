@@ -320,14 +320,18 @@ nav ul li a:hover {
 
 #text_columns article.column1, #text_columns .column2 {
     float:left;
-    font-size:14px;
-    margin: 70px 0;
+    font-size:15px;
+    margin: 40px 0;
     max-width: 450px;
     width:auto;
 }
 
+#text_columns article#column1_sucesos {
+    max-width: 900px;
+}
+
 #text_columns .column2 {
-    margin: 120px 0;
+    margin: 60px 0;
 }
 
 .row {
@@ -734,8 +738,46 @@ input:focus, textarea:focus {
 
 /* End Contact Form */
 
-/* MEDIA QUERIES FOR A RESPONSIVE LAYOUT */
+/* Initial Sucesos section */
 
+/* FOUR COLUMNS */
+
+#four_columns_sucesos1, #four_columns_sucesos2, #text_columns {
+    clear:both;
+    font-family: 'Open Sans', sans-serif;
+    line-height:25px;
+    margin:0 auto;
+    max-width:900px;
+    width:auto;
+}
+
+#four_columns_sucesos1 h2, #four_columns_sucesos2 h2, #text_columns h3 {
+    border-bottom: 1px solid #D6D0C1;
+    font-size:22px;
+    margin-bottom: 20px;
+    padding: 20px 0;
+}
+
+#four_columns_sucesos1 .img-item-sucesos, #four_columns_sucesos2 .img-item-sucesos {
+    float:left;
+    margin-right:25px;
+}
+
+#four_columns_sucesos1 .img-item-sucesos a, #four_columns_sucesos2 .img-item-sucesos a {
+    display:block;
+    position:relative;
+}
+
+
+/* End Sucesos section */
+
+/* MEDIA QUERIES FOR A RESPONSIVE LAYOUT */
+@media (min-width: 1216px)
+{
+    #four_columns_sucesos2 {
+        padding-top: 20px;
+    }
+}
 @media (max-width: 1215px)
 {
     #slider_content1, #slider_content2, #slider_content3 {
@@ -759,6 +801,10 @@ input:focus, textarea:focus {
 
     .container .button {
         display:none;
+    }
+
+    #four_columns_sucesos2 {
+        padding-top: 20px;
     }
 }
 
@@ -822,7 +868,7 @@ input:focus, textarea:focus {
 
     #text_columns article.column1, #text_columns .column2 {
         float:none;
-        margin: 50px 30px 0 30px;
+        margin: 35px 30px 0 30px;
         max-width: 500px;
     }
 
@@ -834,6 +880,18 @@ input:focus, textarea:focus {
     footer .wrapper .column {
         font-size: 12px;
         width: 230px;
+    }
+
+    #four_columns_sucesos1, #four_columns_sucesos2 {
+        width: 500px;
+    }
+
+    #four_columns_sucesos1 .img-item-sucesos:nth-of-type(3), #four_columns_sucesos1 .img-item-sucesos:nth-of-type(4) {
+        margin-top: 25px;
+    }
+
+    #four_columns_sucesos2 .img-item-sucesos:nth-of-type(3), #four_columns_sucesos2 .img-item-sucesos:nth-of-type(4) {
+        margin-top: 25px;
     }
 }
 
@@ -941,6 +999,14 @@ input:focus, textarea:focus {
         display: none;
     }
 
+    #boxcontent article {
+        font-size:1.1em;
+    }
+
+    #boxcontent article h3 {
+        font-size:1.3em;
+    }
+
     #four_columns {
         width:auto;
     }
@@ -958,6 +1024,18 @@ input:focus, textarea:focus {
     .column2 .row {
         margin: 0 0 40px 10px;
         width:auto;
+    }
+
+    .column1 p, .column2 p {
+        font-size: 1.2em;
+    }
+
+    #text_columns article#column1_sucesos {
+        padding-bottom: 1.7em;
+    }
+
+    figcaption {
+        font-size: 1.1em;
     }
 
     footer .wrapper {
@@ -1082,6 +1160,25 @@ input:focus, textarea:focus {
     .contacto-gracias-p-err {
         font-size: 1.8em;
         font-weight: 400;
+    }
+
+    #four_columns_sucesos1, #four_columns_sucesos2 {
+        padding-top: 0;
+        width:auto;
+    }
+
+    #four_columns_sucesos1 .img-item-sucesos, #four_columns_sucesos2 .img-item-sucesos {
+        float:none;
+        margin: 25px auto 0 auto;
+        width: 200px;
+    }
+
+    #four_columns_sucesos1 h2, #four_columns_sucesos2 h2 {
+        margin: 0 30px;
+    }
+
+    #four_columns_sucesos1 figcaption, #four_columns_sucesos2 figcaption {
+        font-size: 1.1em;
     }
 }
 
