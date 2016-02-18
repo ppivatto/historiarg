@@ -75,11 +75,20 @@ header {
 }
 
 header h1 {
-    color:#75AADB;
-    font-family: 'Dancing Script', cursive;
+    color:#FCBF49;
+    font-family: 'Cooper Black', cursive;
     font-size:55px;
     margin:35px 0 0 0;
 }
+
+/*.textoborde {
+    font-family: 'Cooper Black', cursive;
+    font-size:55px;
+    font-weight:bold;
+    -webkit-text-fill-color: #FCBF49;
+    -webkit-text-stroke-color: #843511;
+    -webkit-text-stroke-width: 0.05em;
+}*/
 
 header p {
     color: #3A3380;
@@ -771,6 +780,60 @@ input:focus, textarea:focus {
 
 /* End Sucesos section */
 
+/* start revolucion-surgimiento-patria-criolla section*/
+
+.revolucion-surgimiento-patria-criolla {
+    clear:both;
+    font-family: 'Open Sans', sans-serif;
+    line-height:25px;
+    margin:0 auto 20px auto;
+    max-width:900px;
+    width:auto;
+}
+
+.revolucion-surgimiento-patria-criolla h3 {
+    color: #3A3380;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.revolucion-surgimiento-patria-criolla h4 {
+    color: #408ed6;
+    font-size: 1.13em;
+    font-weight: 500;
+    margin: 0.25em 0.25em 0.25em 0;
+}
+
+.revolucion-surgimiento-patria-criolla p, ul li {
+    font-size: 1.1em;
+}
+
+.revolucion-surgimiento-patria-criolla ul {
+    list-style-type: square;
+    background: #e1ded4;
+    padding: 20px;
+}
+
+.revolucion-surgimiento-patria-criolla ul li {
+    background: #E4E4E4;
+    padding: 5px;
+    margin-left: 35px;
+}
+
+.revolucion-surgimiento-patria-criolla p::first-letter {
+    font-size: 200%;
+    color: #FCBF49;
+}
+
+.revolucion-surgimiento-patria-criolla hr {
+    border-bottom: groove;
+}
+
+
+/* end revolucion-surgimiento-patria-criolla section*/
+
 /* MEDIA QUERIES FOR A RESPONSIVE LAYOUT */
 @media (min-width: 1216px)
 {
@@ -893,6 +956,10 @@ input:focus, textarea:focus {
     #four_columns_sucesos2 .img-item-sucesos:nth-of-type(3), #four_columns_sucesos2 .img-item-sucesos:nth-of-type(4) {
         margin-top: 25px;
     }
+
+    .revolucion-surgimiento-patria-criolla {
+        margin: 35px 30px 0 30px;
+    }
 }
 
 @media (max-width: 765px)
@@ -979,6 +1046,10 @@ input:focus, textarea:focus {
 
     footer .wrapper .social {
         display:none;
+    }
+
+    .revolucion-surgimiento-patria-criolla {
+        margin: 35px;
     }
 }
 
@@ -1200,21 +1271,3 @@ input:focus, textarea:focus {
     height:100%;
 }
 */
-/*
-.sucesos ul{
-    visibility: hidden;
-    background-color: #30aed6;
-}
-
-.sucesos:hover ul{
-    visibility: visible;
-    background-color: #e7931a;
-}
-
-.sucesos li {
-    background-color: #8ad459;
-}
-
-.sucesos li:hover {
-    background-color: #ff0000;
-}*/
