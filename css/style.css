@@ -79,6 +79,11 @@ header h1 {
     font-family: 'Cooper Black', cursive;
     font-size:55px;
     margin:35px 0 0 0;
+    text-shadow:
+    -2px -2px 0 #843511,
+    2px -2px 0 #843511,
+    -2px 2px 0 #843511,
+    2px 2px 0 #843511;
 }
 
 /*.textoborde {
@@ -518,7 +523,6 @@ footer .wrapper .column h4 {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-
 /* SLIDESHOW */
 /* Prevent the slideshow from flashing on load */
 .slidesjs-container {
@@ -769,7 +773,7 @@ input:focus, textarea:focus {
 
 #four_columns_sucesos1 .img-item-sucesos, #four_columns_sucesos2 .img-item-sucesos {
     float:left;
-    margin-right:25px;
+    margin-right:22px;
 }
 
 #four_columns_sucesos1 .img-item-sucesos a, #four_columns_sucesos2 .img-item-sucesos a {
@@ -777,6 +781,14 @@ input:focus, textarea:focus {
     position:relative;
 }
 
+.enlace {
+    color: #408ed6;
+}
+
+.enlace:hover {
+    color: #9fc8ee;
+    text-decoration: underline;
+}
 
 /* End Sucesos section */
 
@@ -843,6 +855,10 @@ input:focus, textarea:focus {
 }
 @media (max-width: 1215px)
 {
+    header h1 {
+        margin-left: 20px;
+    }
+
     #slider_content1, #slider_content2, #slider_content3 {
         margin-right:50px;
         width:50%;
