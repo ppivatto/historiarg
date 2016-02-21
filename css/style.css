@@ -305,7 +305,7 @@ nav ul li a:hover {
 
 #four_columns .img-item {
     float:left;
-    margin-right:25px;
+    margin-right:22px;
 }
 
 #four_columns .img-item a {
@@ -747,6 +747,20 @@ input:focus, textarea:focus {
     position: relative;
     top: 50%;
     width: 128px;
+}
+
+.iconos-secciones {
+    padding-right: 10px;
+}
+
+.subtitulo-enlace {
+    color: #335380;
+}
+
+.subtitulo-enlace:hover {
+    font-family: 'Indie Flower', sans-serif;
+    color: #615b99;
+    border-bottom: dashed;
 }
 
 /* End Contact Form */
