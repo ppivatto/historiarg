@@ -860,6 +860,60 @@ input:focus, textarea:focus {
 
 /* end revolucion-surgimiento-patria-criolla section*/
 
+/* start libros-recomendados section*/
+
+#libros-recomendados {
+    clear:both;
+    font-family: 'Open Sans', sans-serif;
+    line-height:25px;
+    margin:0 auto 20px auto;
+    max-width:900px;
+    width:auto;
+}
+
+#libros-recomendados h3 {
+    color: #3A3380;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+#libros-recomendados h4 {
+    color: #408ed6;
+    font-size: 1.13em;
+    font-weight: 500;
+    margin: 0.25em 0.25em 0.25em 0;
+}
+
+#libros-recomendados p, ul li {
+    font-size: 1.1em;
+}
+
+#libros-recomendados ul {
+    list-style-type: square;
+    background: #e1ded4;
+    padding: 20px;
+}
+
+#libros-recomendados ul li {
+    background: #E4E4E4;
+    padding: 5px;
+    margin-left: 35px;
+}
+
+#libros-recomendados li::first-letter {
+    font-size: 125%;
+    color: #843511;
+}
+
+#libros-recomendados hr {
+    border-bottom: groove;
+}
+
+
+/* end libros-recomendados section*/
+
 /* MEDIA QUERIES FOR A RESPONSIVE LAYOUT */
 @media (min-width: 1216px)
 {
@@ -960,6 +1014,12 @@ input:focus, textarea:focus {
     }
 
     #text_columns article.column1, #text_columns .column2 {
+        float:none;
+        margin: 35px 30px 0 30px;
+        max-width: 500px;
+    }
+
+    #libros-recomendados article.column1 {
         float:none;
         margin: 35px 30px 0 30px;
         max-width: 500px;
@@ -1132,6 +1192,10 @@ input:focus, textarea:focus {
     }
 
     #text_columns article#column1_sucesos {
+        padding-bottom: 1.7em;
+    }
+
+    #libros-recomendados article{
         padding-bottom: 1.7em;
     }
 
