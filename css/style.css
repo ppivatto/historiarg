@@ -193,7 +193,7 @@ nav ul li a:hover {
 #slider_content1, #slider_content2, #slider_content3 {
     display:none;
     font-family: 'Open Sans', sans-serif;
-    left:10%;
+    left:2%;
     line-height: 25px;
     position:absolute;
     top:15%;
@@ -205,12 +205,12 @@ nav ul li a:hover {
     /*background-color:#333333;*/
     background: rgba(51, 51, 51, 0.5);
     border-radius: 15px 0 15px 0;
-    color:#EBE8DE;
-    display:inline-block;
-    font-size:25px;
-    font-weight:bold;
-    margin-bottom:10px;
-    padding:10px 15px;
+    color: #EBE8DE;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 7px;
+    padding: 6px 6px;
 }
 
 #slider_content1 {
@@ -224,7 +224,7 @@ nav ul li a:hover {
     color:#000;
     margin:0 0 30px 0;
     padding:10px 15px;
-    width: 350px;
+    width: 245px;
     word-wrap: break-word;
 }
 
@@ -234,11 +234,12 @@ nav ul li a:hover {
     background-color: #408ed6;
     background-image: linear-gradient(bottom, #75AADB 0%, #9fc8ee 100%);
     background-image: linear-gradient(to bottom, #9fc8ee 0%, #75AADB 100%);
-    border-radius:5px;
+    border-radius:5px 7px;
     border: 1px solid #408ed6;
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
     color: #EBE8DE;
-    padding:7px 14px;
+    padding: 5px 14px;
+    opacity: 0.8;
     text-decoration:none;
     text-shadow: 1px 1px 0 #9fc8ee;
 }
@@ -546,7 +547,7 @@ footer .wrapper .column h4 {
 .container {
     margin: 0 auto;
     position:relative;
-    width:auto;
+    width: 850px;
 }
 
 /* Show active item in the pagination */
@@ -832,7 +833,7 @@ input:focus, textarea:focus {
     margin: 0.25em 0.25em 0.25em 0;
 }
 
-.revolucion-surgimiento-patria-criolla p, ul li {
+.revolucion-surgimiento-patria-criolla p, ul li, ol li {
     font-size: 1.1em;
 }
 
@@ -842,7 +843,19 @@ input:focus, textarea:focus {
     padding: 20px;
 }
 
-.revolucion-surgimiento-patria-criolla ul li {
+.revolucion-surgimiento-patria-criolla ol {
+    list-style-type: lower-roman;
+    background: #e1ded4;
+    padding: 20px;
+}
+
+.revolucion-surgimiento-patria-criolla ol ol{
+    list-style-type: lower-alpha;
+    background: #e1ded4;
+    padding: 20px;
+}
+
+.revolucion-surgimiento-patria-criolla ul li, ol li {
     background: #E4E4E4;
     padding: 5px;
     margin-left: 35px;

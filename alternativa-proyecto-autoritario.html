@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--// metas http://historiarg.com.ar //-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="keywords" content="historia argentina, historiarg, San Martin, Manuel Belgrano, Mariano Moreno, federales, unitarios, Revolucion de mayo, 25 de mayo, cabildo abierto">
+    <meta name="description" content="Historiarg: Historia Argentina. 1776 - 1820: La revolución y el surgimiento de la Patria Criolla, Estallido Revolucionario en el Río de la Plata, La revolución en búsqueda de alternativas, Independencia y Conflictos Internos">
+    <meta name="Revisit" content="5 days">
+    <meta name="language" content="ES">
+    <meta name="distribution" content="global">
+    <meta name="classification" content="Historia Argentina">
+    <meta name="resource-type" content="document" />
+    <meta name="AUTHOR" content="HistoriArg">
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+    <meta name="google" content="nositelinkssearchbox">
+    <!--// FIN metas http://historiarg.com.ar //-->
+    <title>HistoriArg | Nuestra historia esperando por vos</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link href="lightbox/css/lightbox.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu|Ubuntu' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Dancing Script|Dancing Script' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Indie Flower|Indie Flower' rel='stylesheet' type='text/css'/>
+    <script src="js/vendor/modernizr.min.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+    <!-- include extern jQuery file but fall back to local file if extern one fails to load !-->
+    <script src="js/vendor/1.7.2.jquery.min.js"></script>
+    <script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="js/vendor/1.7.2.jquery.min.js"><\/script>')</script>
+
+    <script src="lightbox/js/lightbox.js"></script>
+    <script src="js/vendor/prefixfree.min.js"></script>
+    <script src="js/vendor/jquery.slides.min.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-73223012-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <script src="js/script.js"></script>
+
+    <!--[if lt IE 9]>
+    <style>
+        header
+        {
+            margin: 0 auto 20px auto;
+        }
+        #four_columns .img-item figure span.thumb-screen
+        {
+            display:none;
+        }
+        #four_columns_sucesos1 .img-item figure span.thumb-screen
+        {
+            display:none;
+        }
+        #four_columns_sucesos2 .img-item figure span.thumb-screen
+        {
+            display:none;
+        }
+    </style>
+    <![endif]-->
+
+    <script>
+        $(function() {
+            $('#slides').slidesjs({
+                height: 235,
+                navigation: false,
+                pagination: false,
+                effect: {
+                    fade: {
+                        speed: 400
+                    }
+                },
+                callback: {
+                    start: function(number)
+                    {
+                        $("#slider_content1,#slider_content2,#slider_content3").fadeOut(500);
+                    },
+                    complete: function(number)
+                    {
+                        $("#slider_content" + number).delay(500).fadeIn(1000);
+                    }
+                },
+                play: {
+                    active: false,
+                    auto: true,
+                    interval: 6000,
+                    pauseOnHover: false,
+                    effect: "fade"
+                }
+            });
+        });
+    </script>
+
+</head>
+<body>
+<header>
+    <div class="toggleMobile">
+        <span class="menu1"></span>
+        <span class="menu2"></span>
+        <span class="menu3"></span>
+    </div>
+    <div id="mobileMenu">
+        <ul>
+            <li><a href="index">Inicio</a></li>
+            <li><a href="sucesos">Sucesos</a></li>
+            <li><a href="javascript:void(0)">Biografías</a></li>
+            <li><a href="libros-recomendados">Libros Recomendados</a></li>
+            <li><a href="javascript:void(0)">Documentos</a></li>
+            <li><a href="contacto">Contacto</a></li>
+        </ul>
+    </div>
+    <h1 class="titulo"><a href="index">HistoriArg</a></h1>
+    <p class="titulo subtitulo">Nuestra historia esperando por vos</p>
+
+    <nav>
+        <h2 class="hidden">Nuestra navegación</h2>
+        <ul>
+            <li><a href="index">Inicio</a></li>
+            <li><a href="sucesos">Sucesos</a></li>
+            <li><a href="javascript:void(0)">Biografías</a></li>
+            <li><a href="libros-recomendados">Libros Recomendados</a></li>
+            <li><a href="javascript:void(0)">Documentos</a></li>
+            <li><a href="contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<!--<section id="spacer">
+    <h2 class="hidden">Dolor sit amet</h2>
+    <p>Estás buscando una palabra, personalidad destacada o suceso? Ingresá clave aquí:</p>
+    <div class="search">
+        <form action="#">
+            <input type="text" name="sitesearch" placeholder="Ingrese una palabra..."/>
+            <input type="submit" name="start_search" class="button" value="Buscar"/>
+        </form>
+    </div>
+</section>-->
+<!--<span class="textoborde"><p>mi texto con borde</p></span>-->
+<section class="revolucion-surgimiento-patria-criolla">
+    <h2 class="hidden">Blindtext</h2>
+    <h3>Proyectos Nacionalistas y Conservadores (1930-1946) | Sección 1 -
+        <a class="subtitulo-enlace" href="alternativa-proyecto-autoritario-2">Sección 2 - </a>
+        <a class="subtitulo-enlace" href="alternativa-proyecto-autoritario-3">Sección 3</a>
+
+    </h3>
+    <article id="column1_revolucion-surgimiento-patria-criolla0">
+        <h4><img class="iconos-secciones" src="img/politica-interna.png" alt="Política Interna">Política Interna: La Irrupción del Autoritarismo, la Participación Restringida </h4>
+        <p>El Período 1930-1946 marcó profundos cambios en la vida política del país: la intervención directa de los militares en el poder, la consiguiente suspensión de la Constitución Nacional y de las instituciones republicanas, la politización de las fuerzas de seguridad, la irrupción del autoritarismo, el regreso de los conservadores y la reagrupación  de las fuerzas políticas en el país. La desaparición de relevantes líderes políticos y la presencia de un importante sector obrero que sería respaldado y organizado desde el estado facilitaron el meteórico ascenso de Perón que impondría un nuevo estilo de liderazgo y un gobierno llamado a dejar una fuente impronta en la historia del país.</p>
+        <hr>
+    </article>
+    <article id="column1_revolucion-surgimiento-patria-criolla1">
+        <h4><img class="iconos-secciones" src="img/politica-externa.png" alt="Política Externa">Neutralidad, Nacionalismo y Alianzas Difíciles</h4>
+        <p>La sociedad argentina se dividió entre los partidarios de la neutralidad y los partidarios de la declaración de guerra al Eje. Entre estos últimos, identificados como los Aliados, se encontraba un importante sector que había integrado la Concordancia y que sospechaba que los neutrales eran, en realidad, partidarios del Eje. En junio de 1941, la Cámara de Diputados, con mayoría conservadora, formó una comisión para investigar las “actividades antiargentinas”, entendiendo por tales las acciones de propaganda y espionaje a favor del Eje. La prensa, en general, apoyó esta postura, como también la formación de la Junta de la Victoria, una asociación civil que reunía fondos y los enviaba a Europa como contribución a la causa aliada.</p>
+        <p>Tanto Ortiz, como luego Castillo, se mostraron firmemente neutrales, lo cual fue leído por algunos sectores como simpatía por el Eje. Al mismo tiempo, eran apoyados por grupos que interpretaban esta posición como muestra de independencia y soberanía. En claro enfrentamiento con el Congreso y la Junta de la Victoria presentaron el “Plebiscito de la paz”, un escrito suscrito por dos millones de firmas que refrendaba el neutralismo del presidente.</p>
+        <p>La guerra preocupaba a todos. Pero también preocupaban el fin de la guerra y la posición de la Argentina a su término. ¿Qué pasaría con el país si llegaban a triunfar los alemanes? ¿U si ganaban los ingleses? ¿Y si sobre ambos se imponía Estados Unidos?</p>
+        <hr>
+    </article>
+    <article id="column1_revolucion-surgimiento-patria-criolla2">
+        <h4><img class="iconos-secciones" src="img/economia.png" alt="Economía">Economía: Crisis del Modelo Económico Tradicional</h4>
+        <p>En la década del 30, Gran Bretaña trató de afianzar el área de la libra esterlina mediante la firma de los Pactos de Ottawa y de tratados bilaterales como el Roca-Runciman; estos tratados formaron parte de su estrategia de recuperación de mercados frente a la expansión comercial norteamericana y el desarrollo del área del dólar. </p>
+        <p>El estallido de la Segunda Guerra reiteró el esquema de 1914-18 cuando la Argentina necesito volcarse a EEUU para compensar la falta de importaciones y créditos británicos.</p>
+        <p>Pero en esa oportunidad, se encontró con una política más dura, que desconfiaba de las tendencias nacionalistas de algunos sectores del país y de la amistad con sus competidores británicos. la renuencia de EEUU a vender insumos estratégicos, como el petróleo y el carbón en plena guerra, produjeron cuellos de botella en el abastecimiento interno. Esta circunstancia mostró las debilidades de la política económica argentina, contribuyendo a un nuevo diseño de la misma y al reacomodamiento de las fuerzas internas. Un ejemplo de ello fue la creación de la Flota Mercante del Estado, en 1941, que trató de subsanar la carencia de barcos provocada por la afectación de buques al conflicto y el perjuicio consecuente para el transporte de las exportaciones e importaciones. De todos modos, el cambio en las condiciones económicas mundiales dejó planteada una situación compleja para el país.</p>
+        <hr>
+    </article>
+    <article id="column1_revolucion-surgimiento-patria-criolla3">
+        <h4><img class="iconos-secciones" src="img/sociedad.png" alt="Sociedad">Sociedad: Elite y Problemas Sociales</h4>
+        <p>El proceso de migraciones internas que se acentuó después de la crisis contribuyó a agravar las desigualdades regionales y la macrocefalia argentina. Las características del proceso fueron:</p>
+        <ol>
+            <li>La concentración de las actividades económicas de exportación en la pampa húmeda realimentaba y aceleraba la centralización del poder económico.</li>
+            <li>Las provincias tenían dificultades para canalizar recursos hacia sus economías; las inversiones se concentraban en la pampa húmeda.</li>
+            <li>La población se desplazó hacia los centros urbanos, en particular hacia los puertos de la pampa húmeda; entre 1936 y 1943, Bs As recibió 72000 nuevos habitantes por año.</li>
+            <li>La mayor cantidad de votos se conseguían en la pampa húmeda y, dentro de ella, en los centros urbanos; los gobernantes concentraban sus esfuerzos en satisfacer a esa población en detrimento del resto del país.</li>
+            <li>La clase dirigente no atinó a pensar, ni a ejecutar un proyecto de crecimiento armónico para toda la Nación. Quedaron áreas vacías, otras empobrecidas y las restantes no alcanzaron a balancear a la pampa húmeda que concentró la mayor cantidad de población y bienes disponibles.</li>
+        </ol>
+        <hr>
+    </article>
+    <article id="column1_revolucion-surgimiento-patria-criolla4">
+        <h4><img class="iconos-secciones" src="img/cultura.png" alt="Cultura">Cultura: Dos Maneras de Percibir lo Argentino</h4>
+        <p>La impresión que queda al estudiar el período 1930-1045 es que la clase dirigente no parece calificar adecuadamente dos realidades: </p>
+        <ol>
+            <li>Hacia afuera, los cambios en la situación mundial: la declinación inglesa, el ascenso norteamericano y las profundas modificaciones de la sociedad, la política y los mercados</li>
+            <li>Hacia adentro:</li>
+            <ol>
+                <li>la existencia de “espacios vacíos” que quedaban sin llenar, reivindicaciones largamente sostenidas como eran el apertura de la participación política, las mejoras laborales y sociales y las inquietudes nacionalistas.</li>
+                <li>El hecho concreto de que los sectores que sustentaban esas posturas habían adquirido una cuota de poder no desdeñable:</li>
+                <ul>
+                    <li>los militares, por su participación en la política y el manejo de algunas áreas de estrategia de la economía;</li>
+                    <li>los obreros, concentrados en Bs As y otros centros urbanos, que conformaban una clase numerosa y fortalecida por el desarrollo de la industria y las migraciones.</li>
+                </ul>
+                <li>La disconformidad de vastos sectores con el manejo discrecional del poder y la corrupción.</li>
+            </ol>
+        </ol>
+        <p>Los espacios vacíos tienden a llenarse.</p>
+    </article>
+    <!--<section class="column2">
+        <h3 class="hidden">La política de Perón</h3>
+        <article class="row">
+            <h4 class="hidden">Dolor sit</h4>
+            <img src="img/worker5.png" width="80" class="rocket" alt="Some alt text"/>
+            <p>Ascenso social de las masas: Las manifestaciones obreras fueron escuchadas por Perón, quien sancionó leyes sobre igualdad social.</p>
+        </article>
+        <article class="row">
+            <h4 class="hidden">Ipsum</h4>
+            <img src="img/evita-icono.png" width="80" class="clock" alt="Some alt text"/>
+            <p>Evita fue el oído de la clase baja y obrera. Para ellos, la primera dama era una realidad impensable en otros tiempos.</p>
+        </article>
+    </section>-->
+</section>
+
+<footer>
+    <h2 class="hidden">Our footer</h2>
+    <section id="copyright">
+        <h3 class="hidden">Copyright notice</h3>
+        <div class="wrapper">
+            <div class="social">
+                <a href="javascript:void(0)"><img src="img/icon6.png" alt="Some alt text" width="25"/></a>
+                <a href="javascript:void(0)"><img src="img/icon7.png" alt="Some alt text" width="25"/></a>
+                <a href="javascript:void(0)"><img src="img/icon8.png" alt="Some alt text" width="25"/></a>
+                <a href="javascript:void(0)"><img src="img/icon9.png" alt="Some alt text" width="25"/></a>
+                <a href="javascript:void(0)"><img src="img/icon10.png" alt="Some alt text" width="25"/></a>
+            </div>
+            &copy; Copyright 2016 por  Pablo Pivatto. Todos los derechos reservados.
+        </div>
+    </section>
+    <section class="wrapper">
+        <h3 class="hidden">Footer content</h3>
+        <article class="column">
+            <h4>Resúmenes</h4>
+            Aquí encontrarás los mejores resúmenes para que puedas aprender de la forma más didáctica y divertida nuestra historia argentina, que contada de una buena manera, es entretenida y emocionante, desde el punto de vista en que se la mire.
+        </article>
+        <article class="column midlist">
+            <h4>Atajos rápidos</h4>
+            <ul>
+                <li><a href="javascript:void(0)">Revolución de Mayo</a></li>
+                <li><a href="javascript:void(0)">Congreso constituyente del 13 e Independencia</a></li>
+                <li><a href="javascript:void(0)">Gobernación de Rosas</a></li>
+                <li><a href="javascript:void(0)">Presidencias de Perón</a></li>
+            </ul>
+        </article>
+        <article class="column rightlist">
+            <h4>Personas y Hechos Destacados</h4>
+            <ul>
+                <li><a href="javascript:void(0)"><img src="img/manuel-belgrano.jpg" alt="Some alt text"/><span>Belgrano: otro gran gestor de nuestra independencia.</span></a></li>
+                <li><a href="javascript:void(0)"><img src="img/entrevista-frondizi-guevara-mn.jpg" alt="Some alt text"/><span>En 1961: entrevista entre Frondizi y "Che" Guevara.</span></a></li>
+                <li><a href="javascript:void(0)"><img src="img/de-la-rua-renuncia-mn.jpg" alt="Some alt text"/><span>El 20 de diciembre renuncia el presidente de la Rúa.</span></a></li>
+            </ul>
+            <br class="clear"/>
+        </article>
+    </section>
+</footer>
+</body>
+</html>
