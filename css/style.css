@@ -924,6 +924,31 @@ input:focus, textarea:focus {
     border-bottom: groove;
 }
 
+.imageBooks {
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.helperImage {
+    margin: .2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.helperImageImg {
+    width: 12rem;
+    height: 12rem;
+}
+
+.helperImagePar {
+    font-size: 1.2rem !important;
+    font-family: 'Indie Flower', sans-serif;
+}
+
 
 /* end libros-recomendados section*/
 
@@ -965,6 +990,10 @@ input:focus, textarea:focus {
 
     #four_columns_sucesos2 {
         padding-top: 20px;
+    }
+
+    .imageBooks {
+        flex-direction: column;
     }
 }
 
