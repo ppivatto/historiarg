@@ -76,8 +76,8 @@ header {
 
 header h1 {
     color:#FCBF49;
-    font-family: 'Cooper Black', cursive;
-    font-size:55px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
     margin:35px 0 0 0;
     text-shadow:
     -2px -2px 0 #843511,
@@ -547,7 +547,7 @@ footer .wrapper .column h4 {
 .container {
     margin: 0 auto;
     position:relative;
-    width: 850px;
+    width: auto;
 }
 
 /* Show active item in the pagination */
@@ -958,6 +958,12 @@ input:focus, textarea:focus {
     #four_columns_sucesos2 {
         padding-top: 20px;
     }
+
+    .container {
+        margin: 0 auto;
+        position:relative;
+        width: 850px;
+    }
 }
 @media (max-width: 1215px)
 {
@@ -1092,6 +1098,10 @@ input:focus, textarea:focus {
     .revolucion-surgimiento-patria-criolla {
         margin: 35px 30px 0 30px;
     }
+
+    .imageBooks {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 765px)
@@ -1182,6 +1192,10 @@ input:focus, textarea:focus {
 
     .revolucion-surgimiento-patria-criolla {
         margin: 35px;
+    }
+
+    .imageBooks {
+        flex-direction: column;
     }
 }
 
@@ -1386,6 +1400,10 @@ input:focus, textarea:focus {
 
     #four_columns_sucesos1 figcaption, #four_columns_sucesos2 figcaption {
         font-size: 1.1em;
+    }
+
+    .imageBooks {
+        flex-direction: column;
     }
 }
 
